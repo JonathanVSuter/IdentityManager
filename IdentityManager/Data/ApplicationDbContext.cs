@@ -7,7 +7,7 @@ namespace IdentityManager.Data
     public class ApplicationDbContext : IdentityDbContext
     {
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
-        public ApplicationDbContext(DbContextOptions dbContextOptions) : base (dbContextOptions)
+        public ApplicationDbContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
 
         }

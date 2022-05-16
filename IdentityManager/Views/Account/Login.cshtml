@@ -2,7 +2,7 @@
 <h1 class="text-info">Log in</h1>
 <div class="row">
     <div class="col-md-8">
-        <form asp-controller="Account" asp-action="Login" method="post" role="form">
+        <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" role="form">
             <h4>Use a local account to login</h4>
             <hr />
             <div asp-validation-summary="All" class="text-danger"></div>
@@ -39,7 +39,7 @@
                 <a asp-action="Register">Register</a>
             </p>
             <p>
-                <a asp-action="Forgot">Forgot Password</a>
+                <a asp-action="ForgotPassword">Forgot Password</a>
             </p>
         </form>
     </div>
